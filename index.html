@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#081525" />
+  <meta name="description" content="Explore the ATL Lab, Physics and Astronomy at Seth Anandram Jaipuria School, Kanpur Cantt." />
+  <title>Beyond the Stars | Seth Anandram Jaipuria School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="stars.css" />
+</head>
+<body>
+  <div class="starfield" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Beyond the Stars home"><span class="brand-mark">✦</span><span><b>BEYOND THE STARS</b><small>SETH ANANDRAM JAIPURIA SCHOOL · KANPUR CANTT</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#explore">Explore</a><a href="#gallery">Gallery</a><a class="nav-contact" href="#contact">Contact us <span>↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><div class="eyebrow"><span></span> CURIOSITY HAS NO HORIZON</div>
+        <h1>Where wonder<br>meets <em>discovery.</em></h1>
+        <p class="hero-text">A place to build, question, experiment and look up. Discover the ATL Lab, Physics and Astronomy at our school.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#explore">Explore our worlds <span>↗</span></a><a class="text-link" href="#about">Our story <span>↓</span></a></div>
+        <div class="hero-note"><span class="note-line"></span><span>THINK BOLDLY. LOOK BEYOND.</span></div>
+      </div>
+      <div class="hero-art" aria-label="A star-filled astronomy scene">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="moon"></div>
+        <div class="art-caption"><span class="caption-star">✦</span><div><b>STILLNESS &amp; THE STARS</b><small>A MOMENT TO LOOK INWARD, THEN UP</small></div></div>
+        <span class="coordinate">26° 27′ N &nbsp; 80° 20′ E</span>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span>SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="intro section" id="about"><div class="section-kicker">01 — OUR UNIVERSE</div><div class="intro-grid"><h2>Big questions.<br><em>Bright minds.</em></h2><div class="intro-copy"><p>At Seth Anandram Jaipuria School, Kanpur Cantt, learning reaches beyond the classroom. Our ATL Lab, Physics and Astronomy bring ideas to life through hands-on exploration and a shared sense of wonder.</p><a class="under-link" href="#contact">Get to know us <span>↗</span></a></div></div></section>
+
+    <section class="explore section" id="explore"><div class="section-heading"><div><div class="section-kicker">02 — THREE WORLDS TO EXPLORE</div><h2>Find your <em>frontier.</em></h2></div><p>From making your first prototype to tracing distant galaxies, there’s always something new to discover.</p></div>
+      <div class="world-grid">
+        <a class="world-card atl" href="#gallery" data-category="ATL Lab"><div class="card-index">01 / CREATE</div><div class="card-art"><span class="art-icon">⌘</span><div class="mini-orbit"></div></div><div class="card-info"><div><h3>ATL Lab</h3><p>Imagine it. Make it. Improve it.</p></div><span class="circle-arrow">↗</span></div></a>
+        <a class="world-card physics" href="#gallery" data-category="Physics"><div class="card-index">02 / QUESTION</div><div class="card-art"><span class="art-icon">∿</span><div class="physics-rings"></div></div><div class="card-info"><div><h3>Physics</h3><p>Discover the rules behind it all.</p></div><span class="circle-arrow">↗</span></div></a>
+        <a class="world-card astronomy" href="#gallery" data-category="Astronomy"><div class="card-index">03 / LOOK UP</div><div class="card-art"><span class="art-icon">✧</span><div class="planet"></div></div><div class="card-info"><div><h3>Astronomy</h3><p>Explore the universe beyond us.</p></div><span class="circle-arrow">↗</span></div></a>
+      </div>
+    </section>
+
+    <section class="quote-band"><div class="quote-mark">“</div><div class="quote-portrait"><img id="teacher-photo" alt="Teacher portrait"><span class="portrait-placeholder" id="portrait-placeholder">✦</span><label class="photo-add" for="teacher-photo-upload" aria-label="Add teacher photo">＋</label><input id="teacher-photo-upload" type="file" accept="image/*" hidden></div><div class="quote-content"><div class="section-kicker">A NOTE FROM OUR EDUCATORS</div><blockquote id="teacher-quote">Every great discovery begins with the courage to ask one more question.</blockquote><div class="quote-by"><span class="teacher-name" id="teacher-name">ATL Lab Educator</span><span class="teacher-title" id="teacher-title">Innovation &amp; making · Replace with your teacher’s quote</span></div></div><div class="quote-controls"><button id="quote-prev" aria-label="Previous educator">←</button><span id="quote-count">01 / 03</span><button id="quote-next" aria-label="Next educator">→</button></div></section>
+
+    <section class="gallery section" id="gallery"><div class="section-heading"><div><div class="section-kicker">03 — MOMENTS OF DISCOVERY</div><h2>Our world, <em>in focus.</em></h2></div><p>Experiments, ideas and the people behind them. A growing window into life at our school.</p></div>
+      <div class="gallery-toolbar"><div class="filter-tabs" role="group" aria-label="Filter gallery"><button class="filter active" data-filter="All">All</button><button class="filter" data-filter="ATL Lab">ATL Lab</button><button class="filter" data-filter="Physics">Physics</button><button class="filter" data-filter="Astronomy">Astronomy</button></div><label class="upload-button" for="media-upload">＋ Add photos or videos<input id="media-upload" type="file" accept="image/*,video/*" multiple hidden></label></div>
+      <div class="gallery-grid" id="gallery-grid"><div class="gallery-empty"><span>✧</span><h3>Your discoveries belong here.</h3><p>Add school photos and videos to start your gallery.</p><label class="button button-outline" for="media-upload">Add your first moments</label></div></div>
+      <p class="gallery-hint">Choose a category when adding media. Items are saved in this browser on this device.</p>
+    </section>
+
+    <section class="about-school section"><div class="school-visual"><div class="school-sun"></div><div class="school-star">✦</div><span>LEARN · EXPLORE · BECOME</span></div><div class="school-copy"><div class="section-kicker">ROOTED HERE. REACHING EVERYWHERE.</div><h2>Our school.<br><em>Our shared sky.</em></h2><p>Seth Anandram Jaipuria School, Kanpur Cantt is a community of learners with the courage to ask questions and the imagination to seek new answers.</p><a class="under-link" href="#contact">Come say hello <span>↗</span></a></div></section>
+
+    <section class="contact section" id="contact"><div class="contact-copy"><div class="section-kicker">04 — LET’S CONNECT</div><h2>Have a question?<br><em>Reach for us.</em></h2><p>We’d love to hear from students, families and fellow explorers. Our contact details and social pages are coming soon.</p></div><div class="contact-card"><div class="contact-orbit">✦</div><div class="contact-card-label">SAY HELLO</div><div class="contact-line"><span>EMAIL</span><b>Coming soon</b><i>↗</i></div><div class="contact-line"><span>PHONE</span><b>Coming soon</b><i>↗</i></div><div class="contact-line"><span>FOLLOW ALONG</span><b>Instagram · Facebook</b><i>↗</i></div></div></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">✦</span><span><b>BEYOND THE STARS</b><small>SETH ANANDRAM JAIPURIA SCHOOL · KANPUR CANTT</small></span></a><span>MADE WITH CURIOSITY <b>✦</b></span><a href="#home">BACK TO TOP ↑</a></footer>
+  <dialog class="category-dialog" id="category-dialog"><form method="dialog"><button class="dialog-close" aria-label="Close">×</button><div class="section-kicker">ADD TO YOUR GALLERY</div><h3>Where does this belong?</h3><p id="selected-files"></p><div class="category-options"><button value="ATL Lab" class="category-choice">ATL Lab <span>↗</span></button><button value="Physics" class="category-choice">Physics <span>↗</span></button><button value="Astronomy" class="category-choice">Astronomy <span>↗</span></button></div><button class="cancel-upload" value="cancel">Cancel</button></form></dialog>
+  <dialog class="media-dialog" id="media-dialog"><button class="dialog-close" aria-label="Close">×</button><div class="media-view"></div></dialog>
+  <script src="gallery-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

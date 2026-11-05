@@ -1,0 +1,57 @@
+/* Visible, slow-moving star layers above the page panels and below the content. */
+.starfield {
+  z-index: 1;
+  opacity: .78;
+  background-image:
+    radial-gradient(1.2px 1.2px at 12% 23%, #fff 98%, transparent),
+    radial-gradient(1px 1px at 55% 12%, #ffe6b2 98%, transparent),
+    radial-gradient(1.8px 1.8px at 77% 29%, #fff 98%, transparent),
+    radial-gradient(1px 1px at 33% 72%, #d7e9ff 98%, transparent),
+    radial-gradient(1.5px 1.5px at 90% 83%, #fff 98%, transparent),
+    radial-gradient(1.2px 1.2px at 7% 89%, #ffe6b2 98%, transparent),
+    radial-gradient(1px 1px at 43% 41%, #fff 98%, transparent),
+    radial-gradient(1.5px 1.5px at 66% 61%, #fff 98%, transparent),
+    radial-gradient(1px 1px at 20% 55%, #d7e9ff 98%, transparent),
+    radial-gradient(1px 1px at 84% 8%, #fff 98%, transparent);
+  background-size: 320px 300px;
+  animation: twinkle 3.2s ease-in-out infinite alternate;
+}
+.starfield::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(2px 2px at 18% 38%, #fff 98%, transparent), radial-gradient(1.7px 1.7px at 72% 76%, #ffe7b8 98%, transparent), radial-gradient(2px 2px at 92% 46%, #fff 98%, transparent);
+  background-size: 410px 370px;
+  animation: slowSparkle 5.7s ease-in-out infinite alternate;
+}
+@keyframes twinkle { from { opacity: .28; } to { opacity: 1; } }
+@keyframes slowSparkle { 0% { opacity: .16; } 37% { opacity: .85; } 62% { opacity: .4; } 100% { opacity: 1; } }
+.starfield::before {
+  content: "";
+  position: absolute;
+  left: 8%; top: 7%; width: 2px; height: 2px;
+  border-radius: 50%; background: #fff5dc;
+  box-shadow: 12vw 14vh 0 0 #fff, 26vw 3vh 0 0 #d7e9ff, 39vw 22vh 0 0 #fff5dc, 53vw 9vh 0 0 #fff, 71vw 19vh 0 0 #ffe7b8, 88vw 8vh 0 0 #fff, 5vw 43vh 0 0 #fff, 21vw 57vh 0 0 #ffe7b8, 36vw 47vh 0 0 #fff, 62vw 39vh 0 0 #d7e9ff, 78vw 55vh 0 0 #fff, 94vw 44vh 0 0 #fff5dc, 11vw 78vh 0 0 #fff, 29vw 89vh 0 0 #d7e9ff, 47vw 75vh 0 0 #fff5dc, 67vw 91vh 0 0 #fff, 83vw 77vh 0 0 #ffe7b8, 96vw 94vh 0 0 #fff;
+  animation: distantStars 3.8s ease-in-out infinite alternate;
+}
+@keyframes distantStars { 0% { opacity: .18; transform: scale(.78); } 48% { opacity: .92; } 100% { opacity: .35; transform: scale(1.16); } }
+.site-header, .footer { position: relative; z-index: 2; }
+main { position: static; }
+main > section > * { position: relative; z-index: 2; }
+.hero-art { position: absolute; z-index: 2; left: 25%; top: 50%; width: 50%; height: 510px; transform: translateY(-50%); opacity: .96; }
+.hero-copy { position: relative; z-index: 3; }
+.quote-band { grid-template-columns: 70px 86px minmax(0, 1fr) auto; gap: 22px; }
+.quote-portrait { width: 86px; height: 104px; position: relative; overflow: hidden; border: 1px solid rgba(221,185,121,.42); background: radial-gradient(ellipse at 50% 28%, #43516a, #182b40 58%, #0b1928); }
+.quote-portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.quote-portrait img[hidden], .portrait-placeholder[hidden] { display: none; }
+.portrait-placeholder { position: absolute; inset: 0; display: grid; place-items: center; color: rgba(221,185,121,.8); font-size: 27px; }
+.portrait-placeholder::after { content: "TEACHER PHOTO"; position: absolute; bottom: 9px; left: 0; right: 0; text-align: center; font: 6px var(--sans); letter-spacing: .12em; color: #c1b49b; }
+.photo-add { position: absolute; right: 5px; bottom: 5px; width: 23px; height: 23px; display: grid; place-items: center; color: #071321; background: var(--gold); border-radius: 50%; cursor: pointer; font-size: 16px; line-height: 1; }
+.photo-add:hover { background: #f0d19b; }
+@media (max-width: 850px) { .quote-band { grid-template-columns: 50px 72px minmax(0, 1fr); } .quote-controls { grid-column: 3; } .quote-portrait { width: 72px; height: 88px; } }
+@media (max-width: 600px) {
+  main > section > .hero-art { position: relative; left: auto; top: auto; width: auto; height: 335px; transform: none; opacity: 1; }
+  .quote-band { grid-template-columns: 35px 56px minmax(0, 1fr); }
+  .quote-portrait { width: 56px; height: 72px; }
+  .quote-controls { grid-column: 3; }
+}
