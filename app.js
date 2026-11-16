@@ -5,19 +5,19 @@ const quotes = [
     quote: 'Every great discovery begins with the courage to ask one more question.',
     name: 'ATL Lab Educator',
     title: 'Innovation & making · Replace with your teacher’s quote',
-    photo: '' // Example: 'assets/educators/atl-educator.jpg'
+    photo: '' +91 91404 59673 20261116_100742.jpg.jpeg'
   },
   {
     quote: 'Physics helps us notice the remarkable ideas hiding inside everyday things.',
     name: 'Physics Educator',
     title: 'Physics · Replace with your teacher’s quote',
-    photo: '' // Example: 'assets/educators/physics-educator.jpg'
+    photo: '' WhatsApp Image 2026-11-15 at 10.13.14 PM.jpeg'
   },
   {
     quote: 'When we look up at the night sky, we remember how much there is to explore.',
     name: 'Astronomy Educator',
     title: 'Astronomy · Replace with your teacher’s quote',
-    photo: '' // Example: 'assets/educators/astronomy-educator.jpg'
+    photo: ''WhatsApp Image 2026-11-16 at 10.22.04 AM.jpeg'
   }
 ];
 
